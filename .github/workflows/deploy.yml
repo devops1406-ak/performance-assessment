@@ -6,8 +6,8 @@ on:
       - main
 jobs:
   Explore-GitHub-Actions:
-    # runs-on: my-runner
-    runs-on: ubuntu-latest
+    runs-on: my-runner
+    # runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - run: sudo ls
