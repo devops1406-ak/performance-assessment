@@ -1,0 +1,13 @@
+name: GitHub Actions Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: my-runner
+    steps:
+    - uses: actions/checkout@v4
+    - name: build the docker image and deploy the containers on local runner.
+      run: docker-compose up
+
