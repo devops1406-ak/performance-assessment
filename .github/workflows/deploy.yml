@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: sudo ls
-    # - name: build the docker image and deploy the containers on local runner.
-    #   run: docker-compose up
+    - name: build the docker image and deploy the containers on local runner.
+      run: sudo docker-compose up
 
