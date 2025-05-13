@@ -7,10 +7,10 @@ on:
 jobs:
   Explore-GitHub-Actions:
     runs-on: my-runner
-    # runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - run: sudo ls
     - name: build the docker image and deploy the containers on local runner.
-      run: sudo docker-compose up
+      run: docker-compose up
+    - run: sleep 200
+    - run: docker-compose down
 
