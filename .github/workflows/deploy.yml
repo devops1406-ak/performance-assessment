@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - run: ls
-    - name: build the docker image and deploy the containers on local runner.
-      run: docker-compose up
+    - run: sudo ls
+    # - name: build the docker image and deploy the containers on local runner.
+    #   run: docker-compose up
 
